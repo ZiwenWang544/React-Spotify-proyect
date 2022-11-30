@@ -3,7 +3,7 @@
 export const App = () => {
   return (
     <>
-      <p>APP</p>
+      <p>APP spotify</p>
     </>
   )
 }
