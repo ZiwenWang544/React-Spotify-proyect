@@ -57,7 +57,7 @@ export const RegisterPage = () => {
             {incluirTelefono && (
                  <div>
                  <label>Teléfono</label>
-                 <input type="telf" {...register('telefono')} />
+                 <input type="tel" {...register('telefono')} />
              </div>
             )}
            
