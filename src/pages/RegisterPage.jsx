@@ -1,4 +1,5 @@
-import { useForm } from "react-hook-form"
+import { useForm } from "react-hook-form";
+import {useNavigate} from 'react-router-dom'
 import { edadValidator } from "../components/validators";
 
 
@@ -6,10 +7,14 @@ import { edadValidator } from "../components/validators";
 export const RegisterPage = () => {
     const {register, formState: {errors}, watch, handleSubmit} = useForm();
 
-    const onSubmit = (data) =>{
-        console.log(data)
-    }
+    const navigate = useNavigate()
 
+    const onSubmit = () =>{
+       navigate('/dashboard', {
+        replace: true
+       })
+    }
+    
     const incluirTelefono = watch('incluirTelefono')
   return (
     <div>
