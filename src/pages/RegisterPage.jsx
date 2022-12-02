@@ -65,6 +65,24 @@ export const RegisterPage = () => {
                  <input type="tel" {...register('telefono')} />
              </div>
             )}
+
+            <div>
+                <label>Contraseña</label>
+                <input type="password" {...register('password', {
+                    required: true,
+                    maxLength: 10
+                })}/>
+               
+            </div>
+
+            <div>
+                <label>Confirmar Contraseña</label>
+                <input type="password" {...register('consfirm_password', {
+                    required: true,
+                    maxLength: 10
+                })}/>
+               
+            </div>
            
             <input type="submit" value="Enviar"/>
         </form>
